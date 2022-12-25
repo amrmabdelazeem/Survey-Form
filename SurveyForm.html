@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"
+  href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Survery form about something interesting!</p>
+  <form id="survey-form">
+    <fieldset>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text"/ placeholder="Your name here" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email"/ placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Number</label>
+        <input id="number" type="number" min= 4 max=14 placeholder="Enter a number up to 14"/>
+      </div>
+      <label id="gender-label> for="gender">Gender</label>
+      <select id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <label>
+        <input id="radio"
+               name="year-selection"
+               value="First Year" type="radio"/>First Year</label>
+      <label for="second-year">Second Year</label>
+      <input id="radio"
+             name="year-selection"
+             value="Second Year" type="radio"/>
+
+      <div class="check-box">
+      <label>
+          <input
+                id="hi"
+                value="Maths"
+                type="checkbox"/>Maths
+      </label>
+      <label>
+          <input value="Geography"
+                 type="checkbox"/>Geography
+      </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <textarea id="comments"
+                placeholdder="Enter text here"
+                type="textarea"></textarea>
+      
+    </fieldset>
+    <button id="submit" type="submit">Submit</button>
+    
+</body>
+</html>
